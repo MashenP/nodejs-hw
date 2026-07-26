@@ -11,7 +11,7 @@ export const upload = multer({
     if (file.mimetype.startsWith(allowedType)) {
       cb(null, true);
     } else {
-      cb(new Error('Only images allowed.'), false);
+      cb(new Error('Only images allowed'), false);
     }
   },
 });
